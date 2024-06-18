@@ -75,7 +75,7 @@ def display_winner(winner):
     if winner != 'Draw':
         text = font.render(f'{winner} wins', True, 'Black')
     else:
-        text = font.render(f'{winner} ! Press Enter', True, 'Black')    
+        text = font.render(f'{winner} !', True, 'Black')    
     text_rect = text.get_rect(center=(screen_width // 2, screen_height // 2 - 50))
     screen.blit(text, text_rect)
     
